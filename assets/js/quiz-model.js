@@ -8,13 +8,13 @@ const quiz = [
             {
                 valid : [
                     {
-                        message: 'Cachorro válido,<br /> Lorem ipsum dollor',
+                        message: 'Ótimo, seu cachorro pode ser um doador.',
                         icon: './assets/images/icon-valid.png'
                     }
                 ],
                 invalid : [
                     {
-                        message: 'Cachorro inválido,<br /> Lorem ipsum dollor',
+                        message: 'Que pena!<br /> Infelizmente seu cachorro não pode ser um doador.',
                         icon: './assets/images/icon-invalid.png'
                     }
                 ],
@@ -23,19 +23,19 @@ const quiz = [
         question: [
             {
                 id: 1,
-                name: 'Question Dog 01',
-                correct: 'y'
+                name: 'Seu cachorro tem pulga?',
+                correct: 'n'
             },{
                 id: 2,
-                name: 'Question Dog 02',
+                name: 'Seu cachorro tem alguma doênça?',
                 correct: 'n'
             },{
                 id: 3,
-                name: 'Question Dog 03',
+                name: 'Seu cachorro é bonito?',
                 correct: 'y'
             },{
                 id: 4,
-                name: 'Question Dog 04',
+                name: 'Seu cachorro tem sangue?',
                 correct: 'y'
             }
         ]
@@ -48,13 +48,13 @@ const quiz = [
             {
                 valid : [
                     {
-                        message: 'Gato válido,<br /> Lorem ipsum dollor',
+                        message: 'Ótimo, seu gato pode ser um doador.',
                         icon: './assets/images/icon-valid.png'
                     }
                 ],
                 invalid : [
                     {
-                        message: 'Gato inválido,<br /> Lorem ipsum dollor',
+                        message: 'Que pena!<br /> Infelizmente seu gato não pode ser um doador.',
                         icon: './assets/images/icon-invalid.png'
                     }
                 ],
@@ -63,19 +63,19 @@ const quiz = [
         question: [
             {
                 id: 5,
-                name: 'Question Cat 01',
-                correct: 'y'
+                name: 'Seu gato tem pulga?',
+                correct: 'n'
             },{
                 id: 6,
-                name: 'Question Cat 02',
-                correct: 'y'
+                name: 'Seu gato tem alguma doênça?',
+                correct: 'n'
             },{
                 id: 7,
-                name: 'Question Cat 03',
+                name: 'Seu gato é bonito?',
                 correct: 'y'
             },{
                 id: 8,
-                name: 'Question Cat 04',
+                name: 'Seu gato tem sangue?',
                 correct: 'y'
             }
         ]
