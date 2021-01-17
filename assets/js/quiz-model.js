@@ -3,7 +3,7 @@ const quiz = [
         identify: 'dog',
         name: 'Cachorro',
         background: '#13a89e',
-        icon: '/assets/images/icon-dog.png',
+        icon: './assets/images/icon-dog.png',
         response: [
             {
                 valid : [
@@ -43,7 +43,7 @@ const quiz = [
         identify: 'cat',
         name: 'Gato',
         background: '#ed4d59',
-        icon: '/assets/images/icon-cat.png',
+        icon: './assets/images/icon-cat.png',
         response: [
             {
                 valid : [
