@@ -1,0 +1,133 @@
+@import "main";
+
+/*Padrões*/
+body{
+  background: $main_color_1;
+  min-height: 100vh;
+  @extend .d_flex, .direction-column, .justify-center;
+}
+.btn{
+  @extend .b-radius-50, .smooth;
+  min-width: 115px;
+  text-align: center;
+  background: $secondary_color;
+  padding: 15px 20px;
+  @include font($white, 1.4em, 700, 1.4em);
+  &.secondary-bg-1{
+    background: $secondary_color_1;
+  }
+    &.main-bg{
+    background: $main_color;
+  }
+  &:hover{
+    @extend .smooth;
+    background: $main_color_1;
+  }
+}
+
+.list-social{
+  > span{
+    margin-right: 20px;
+    @include font($white, 1.4em, 700, 1.6em);
+  }
+  ul{
+    li{
+      margin-right: 10px;
+      a{
+        width: 40px;
+        height: 40px;
+        background: $main_color;
+        text-align: center;
+        @extend .b-radius-5;
+        i{
+          display: inline-block;
+          float: none;
+          @include font($white, 1.6em, false, 40px);
+        }
+        &:hover{
+          background: $main_color-1!important;
+        }
+      }
+      &.whatsApp{
+        a{
+          background: $main_color_2;
+        }
+      }
+      &.facebook{
+        a{
+          background: #3384e9;
+        }
+      }
+      &.linkedin{
+        a{
+          background: #43bdff;
+        }
+      }
+      &.instagram{
+        a{
+          background: #cc9354;
+        }
+      }
+    }
+  }
+}
+.quiz{
+  .content-quiz{
+    background: $main_color;
+    @extend .b-radius-20;
+    padding: 50px;
+    text-align: center;
+    figure{
+      img{
+        display: inline-block;
+      }
+    }
+    strong{
+      float: left;
+      width: 100%;
+      margin-top: 40px;
+      @include font($white, 4em, 700, 1.4em);
+    }
+    aside{
+      float: left;
+      width: 100%;
+      margin-top: 40px;
+      img{
+        display: inline-block;
+      }
+    }
+    &.content-quiz-2{
+      padding: 80px 50px;
+      strong{
+        margin-top: 0;
+      }
+      .set-category{
+        display: inline-block;
+        margin: 30px 15px 0 15px;
+        width: 180px;
+        padding: 20px;
+        @extend .b-radius-20, .smooth;
+        img{
+          @extend .self-center;
+        }
+        span{
+          @extend .self-center;
+          float: left;
+          width: 100%;
+          margin-top: 15px;
+          @include font($white, 1.4em);
+        }
+        &:hover{
+          @extend .smooth;
+          background: $main_color_1!important;
+        }
+      }
+    }
+    &.content-quiz-3{
+      aside{
+        margin-top: 0;
+      }
+    }
+  }
+}
+@import "responsive";
